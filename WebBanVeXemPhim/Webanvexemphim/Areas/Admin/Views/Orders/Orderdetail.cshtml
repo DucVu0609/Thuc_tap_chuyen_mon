@@ -1,0 +1,71 @@
+﻿@model Webanvexemphim.Models.order
+@{
+    var cus = @ViewBag.customer;
+
+    ViewBag.Title = "Order";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="card card-title bg-white p-1">
+    <div class="row">
+        <div class="col-md-6 "> <h5 class="pl-2 mt-2 text-blues">Chi tiết đơn đặt vé</h5> </div>
+        <div class="col-md-6 m-0">
+            <ol class="breadcrumb bg-white float-sm-right m-0">
+                <li class="breadcrumb-item m-0"><a href="~/Bdmin">Home</a></li>
+                <li class="breadcrumb-item active m-0">Chi tiết đơn đặt vé</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- order complete Page Start -->
+<section class="order-complete inner-page-sec-padding-bottom bg-light">
+    <div class="container bg-white ">
+        <div class="row">
+            <div class="col-12">
+               
+                <table class="table order-details-table">
+                    <tfoot>
+                        <tr>
+                            <th>Mã vé đặt:</th>
+                            <td><span>@Model.ID</span></td>
+                        </tr>
+                        <tr>
+                            <th>Tên khách hàng:</th>
+                            <td>@Model.deliveryname</td>
+                        </tr>
+                        <tr>
+                            <th>Số thiện thoại:</th>
+                            <td><span>@Model.deliveryphone</span></td>
+                        </tr>
+                        <tr>
+                            <th>Email: </th>
+                            <td><span>@Model.deliveryemail</span></td>
+                        </tr>
+                        <tr>
+                            <th>Địa chỉ khách hàng:</th>
+                            <td><span>@Model.deliveryaddress</span></td>
+                        </tr>
+                        <tr>
+                            <th>Ngày đặt vé:</th>
+                            <td><span>@Model.created_ate <span class="text-danger">(MM/DD/YY)</span> </span></td>
+                        </tr>
+                      
+                        <tr>
+                            <th>Phương thức thanh toán: </th>
+                            <td><span>Thanh toán tại quầy.</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <h3 class="order-table-title">Chi tiết đơn đặt vé</h3>
+                <div class="table-responsive">
+                    @Html.Action("productDetailCheckOut", "Orders", new { orderId = Model.ID })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $("#order").addClass("active");
+</script>

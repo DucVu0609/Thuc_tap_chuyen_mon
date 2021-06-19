@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Webanvexemphim.Models.post>
+@foreach (var item in Model)
+{
+    <div class="article-short-line-entity">
+        <a class="entity-preview" href="article-sidebar-right.html">
+            <span class="embed-responsive embed-responsive-16by9">
+                <img class="embed-responsive-item" src="~/public/images/post/@item.img" alt="" />
+            </span>
+        </a>
+        @{
+            string title = item.title;
+        }
+        <div class="entity-content">
+            <h4 class="entity-title">
+                <a class="content-link" href="article-sidebar-right.html"></a>
+            </h4>
+            @if (title.Length > 40)
+            {
+                <p class="font-weight-bold entity-subtext">@title.Substring(0, 40)...</p>
+            }
+            else
+            {
+                <p class="entity-subtext">@title</p>
+            }
+
+        </div>
+    </div>
+}

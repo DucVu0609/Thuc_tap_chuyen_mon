@@ -1,0 +1,212 @@
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\Webanvexemphim.dll.config
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\Webanvexemphim.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\Webanvexemphim.pdb
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\csc.exe
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\csc.exe.config
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\csc.rsp
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\csi.exe
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\csi.rsp
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\System.AppContext.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\vbc.exe
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\vbc.exe.config
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\vbc.rsp
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\VBCSCompiler.exe
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\EntityFramework.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\EntityFramework.SqlServer.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Helpers.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Mvc.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Razor.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Deployment.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Razor.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\EntityFramework.xml
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\EntityFramework.SqlServer.xml
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Razor.xml
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.xml
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Deployment.xml
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Razor.xml
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Helpers.xml
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\System.Web.Mvc.xml
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.csprojAssemblyReference.cache
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.csproj.CoreCompileInputs.cache
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.csproj.CopyComplete
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.dll
+C:\Users\hungdeptrai\Desktop\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.pdb
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\Webanvexemphim.dll.config
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\Webanvexemphim.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\Webanvexemphim.pdb
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\csc.exe
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\csc.exe.config
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\csc.rsp
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\csi.exe
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\csi.rsp
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\System.AppContext.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\System.Collections.Immutable.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\System.IO.FileSystem.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\System.Reflection.Metadata.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\vbc.exe
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\vbc.exe.config
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\vbc.rsp
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\VBCSCompiler.exe
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\roslyn\VBCSCompiler.exe.config
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\EntityFramework.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\EntityFramework.SqlServer.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\Microsoft.Web.Infrastructure.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Helpers.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Mvc.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Razor.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Deployment.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Razor.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\EntityFramework.xml
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\EntityFramework.SqlServer.xml
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Razor.xml
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.xml
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Deployment.xml
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Razor.xml
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Helpers.xml
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\System.Web.Mvc.xml
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.csprojAssemblyReference.cache
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.csproj.CoreCompileInputs.cache
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.csproj.CopyComplete
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.dll
+F:\Desktop24th02_2021\shareCode\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.pdb
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\Webanvexemphim.dll.config
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\Webanvexemphim.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\Webanvexemphim.pdb
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\csc.exe
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\csc.exe.config
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\csc.rsp
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\csi.exe
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\csi.rsp
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\System.AppContext.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\vbc.exe
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\vbc.exe.config
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\vbc.rsp
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\EntityFramework.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Helpers.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Mvc.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Razor.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Deployment.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Razor.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\EntityFramework.xml
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Razor.xml
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.xml
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Deployment.xml
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Webpages.Razor.xml
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Helpers.xml
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\System.Web.Mvc.xml
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.csprojAssemblyReference.cache
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.csproj.CopyComplete
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.dll
+C:\Users\HP\Downloads\Webanvexemphim\Webanvexemphim\obj\Debug\Webanvexemphim.pdb
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\Webanvexemphim.dll.config
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\Webanvexemphim.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\Webanvexemphim.pdb
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\csc.exe
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\csc.exe.config
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\csc.rsp
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\csi.exe
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\csi.rsp
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\System.AppContext.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\vbc.exe
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\vbc.exe.config
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\vbc.rsp
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\EntityFramework.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Helpers.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Mvc.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Razor.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Webpages.Deployment.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Webpages.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Webpages.Razor.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\EntityFramework.xml
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Razor.xml
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Webpages.xml
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Webpages.Deployment.xml
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Webpages.Razor.xml
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Helpers.xml
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\System.Web.Mvc.xml
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\obj\Debug\Webanvexemphim.csprojAssemblyReference.cache
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\obj\Debug\Webanvexemphim.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\obj\Debug\Webanvexemphim.csproj.CopyComplete
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\obj\Debug\Webanvexemphim.dll
+C:\Users\HP\Downloads\Thực tập main\WebBanVeXemPhim\Webanvexemphim\obj\Debug\Webanvexemphim.pdb

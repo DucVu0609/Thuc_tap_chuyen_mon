@@ -1,0 +1,167 @@
+﻿@model IEnumerable<Webanvexemphim.Models.Cart_item>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "postDetaail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Action("_Header", "Modules")
+<main class="cart-page-main-block inner-page-sec-padding-bottom">
+    <div class="cart_area cart-area-padding  ">
+        <div class="container">
+            <div class="pt-5">
+                <div class="section-pannel ">
+                    <div class="grid row">
+                        <div class="col-md-10">
+                            <form autocomplete="off">
+                                <div class="row form-grid">
+                                    <div class="col-sm-12">
+
+                                        <p>  Trang Chủ / <span class="text-danger"> Thông tin vé đã đặt  </span> </p>
+                                    </div>
+                                    @Html.Partial("_MessgeAlert")
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="page-section-title">
+                <h1>Thông tin vé đã đặt</h1>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" class="">
+                        <!-- Cart Table -->
+                        <div class="cart-table table-responsive mb--40">
+                            <table class="table">
+                                <!-- Head Row -->
+                                <thead>
+                                    <tr>
+                                        <th class="pro-remove"></th>
+                                        <th class="pro-thumbnail">Ảnh phim</th>
+                                        <th class="pro-title">Tên phim</th>
+                                        <th class="pro-price">Giá vé</th>
+                                        <th class="pro-price">Giờ chiếu</th>
+                                        <th class="pro-quantity">Số lượng</th>
+                                        <th class="pro-subtotal">Tổng tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="border">
+                                    <spam class="text-danger"> @ViewBag.statusCart</spam>
+                                    <!-- Product Row -->
+
+                                    @{ float sum = 0;
+                                    }
+                                    @foreach (var iten in Model)
+                                    {
+                                        var su1m = iten.product.price * iten.quantity;
+                                        sum += (float)su1m;
+                                        <tr id="cartItem_@iten.product.ID">
+                                            <td class="pro-remove">
+                                                <a href="~/Cart/deleteitem?productID=@iten.product.ID"><i class="far fa-trash-alt"></i></a>
+                                            </td>
+                                            <td class="pro-thumbnail">
+                                                <a href="#">
+                                                    <img width="30px" src="~/Public/images/@iten.product.img" alt="Product">
+                                                </a>
+                                            </td>
+                                            <td class="pro-title"><a href="#">@iten.product.name</a></td>
+
+                                            <td class="pro-price">
+
+                                                <span class="text-danger">@iten.product.price.ToString("N0") VND  </span>
+                                            </td>
+                                            <td class="pro-price">
+
+                                                <span class="text-danger"> lúc @iten.time  ngày: @iten.day.ToString("dd/MM/yyyy")</span>
+                                            </td>
+                                            <td class="pro-quantity">
+                                                <div class="pro-qty">
+                                                    <div class="count-input-block">
+                                                        <p type="number" class=" text-center w-25">@iten.quantity</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="pro-subtotal"><span class="font-weight-bold">@su1m.ToString("N0") VND</span></td>
+                                        </tr>
+
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+                <!-- Cart Summary -->
+
+                <div class="col-lg-6 col-12 d-flex ">
+                    <div class="cart-summary  float-right ">
+                        <div class="cart-summary-wrap">
+                            <h4><span>Thanh toán</span></h4>
+                            <p>Tổng tiền vé <span class="text-primary">@sum.ToString("N0") VND</span></p>
+                            <p>Chiết khấu <span class="text-primary">0 VND</span></p>
+                            <h2>Tổng tiền thanh toán <span class="text-primary">@sum.ToString("N0") VND</span></h2>
+                        </div>
+                       
+                          
+                        </div>
+
+                </div>
+
+                <div class="col-lg-6 col-12  ">
+                    @using (Html.BeginForm("Thanh_toan", "Checkout", FormMethod.Post))
+                    {
+                        <div id="billing-form" class="mb-40">
+                            <h4 class="checkout-title p-2">Thông tin đặt vé</h4>
+                            <div class="row form-grid">
+
+                                <div class="col-sm-6">
+                                    <div class="input-view-flat input-group">
+                                        <input class="form-control" name="deliveryname" type="text" placeholder="Tên bạn" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="input-view-flat input-group">
+                                        <input class="form-control" name="deliveryemail" type="text" placeholder="Địa chỉ Email" required />
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="input-view-flat input-group">
+                                        <input class="form-control" name="deliveryphone" type="text" placeholder="Số điện thoại" required />
+                                    </div>
+                                </div>
+                                <input type="hidden" name="sum" value="@sum" />
+                                <div class="col-sm-6">
+                                    <div class="input-view-flat input-group">
+                                        <input class="form-control" name="deliveryaddress" type="text" placeholder="Địa chỉ " required />
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label>Ghi chú</label>
+                                    <div class="input-view-flat input-group">
+
+                                        <textarea class="form-control" name="note" type="text" placeholder="ghi chú ">
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-summary-button pt-2">
+                            <button type="submit" class=" w-100 btn-theme btn">Đặt vé</button>
+
+                        </div>
+                    }
+                </div>
+            </div>
+    </div>
+
+</main>
+<div class="pt-5"></div>
+@Html.Action("_footer", "Modules")

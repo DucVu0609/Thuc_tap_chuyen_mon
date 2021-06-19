@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Webanvexemphim.Models.menu>
+@{
+    var mainmenuitem = ViewBag.mainmenuitem;
+
+}
+
+<li class="nav-item nav-item-arrow-down nav-hover-show-sub">
+    <a class="nav-link" href="#">@mainmenuitem.name</a>
+
+    <div class="nav-arrow"><i class="fas fa-chevron-down"></i></div>
+    <ul class="collapse nav">
+        @foreach (var item in Model)
+        {
+            <li class="nav-item"> 
+        <a class="nav-link" href="~/@item.link">@item.name</a></li>
+
+        }
+    </ul>
+</li>

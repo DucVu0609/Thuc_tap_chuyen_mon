@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Webanvexemphim.Models.movies>
+@{
+    ViewBag.Title = "Movie_Category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Action("_Header", "Modules")
+<section class="section-long">
+    <div class="container">
+        <div class="section-pannel">
+            <div class="grid row">
+                <div class="col-md-10">
+                    <form autocomplete="off">
+                        <div class="row form-grid">
+                            <div class="col-sm-6 col-lg-3">
+
+                                <p>  Trang Chủ/ <span class="text-danger">@ViewBag.nameCate</span> </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2 my-md-auto d-flex">
+                    <span class="info-title d-md-none mr-3">Select view:</span>
+                    <ul class="ml-md-auto h5 list-inline">
+                        <li class="list-inline-item">
+                            <a class="content-link transparent-link" href="movies-blocks.html"><i class="fas fa-th"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="content-link transparent-link active" href="movies-list.html"><i class="fas fa-th-list"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        @foreach (var item in Model)
+        {
+            <article class="movie-line-entity">
+                <div class="entity-poster" data-role="hover-wrap">
+                    <div class="embed-responsive embed-responsive-poster">
+                        <img class="embed-responsive-item" src="~/public/images/@item.img" alt="" />
+                    </div>
+                    <div class="d-over bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show">
+                        <div class="entity-play">
+                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=@item.LinkTrailer" data-magnific-popup="iframe">
+                                <span class="icon-content"><i class="fas fa-play"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="entity-content">
+                    <h4 class="entity-title">
+                        <a class="content-link text-uppercase" href="~/chi-tiet-movie/@item.slug">@item.name</a>
+                    </h4>
+                    <div class="entity-category">
+                        <a class="content-link" href="movies-blocks.html">@item.directors</a>,
+                    </div>
+                    <div class="entity-info">
+                        <div class="info-lines">
+                            <div class="info info-short">
+                                <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
+                                <span class="info-text">8,1</span>
+                                <span class="info-rest">/10</span>
+                            </div>
+                            <div class="info info-short">
+                                <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
+                                <span class="info-text">@item.time</span>
+                                <span class="info-rest">&nbsp;phút</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-short entity-text">
+                        @Html.Raw(item.detail)
+                    </p>
+                </div>
+                <div class="entity-extra">
+                    <div class="text-uppercase entity-extra-title">Giờ chiếu</div>
+                    <div class="entity-showtime">
+                        <div class="showtime-wrap">
+                            <div class="showtime-item">
+                                <span class="disabled btn-time btn" aria-disabled="false">11 : 30</span>
+                            </div>
+                            <div class="showtime-item">
+                                <a class="btn-time btn" aria-disabled="false" href="#">13 : 25</a>
+                            </div>
+                            <div class="showtime-item">
+                                <a class="btn-time btn" aria-disabled="false" href="#">16 : 07</a>
+                            </div>
+                            <div class="showtime-item">
+                                <a class="btn-time btn" aria-disabled="false" href="#">19 : 45</a>
+                            </div>
+                            <div class="showtime-item">
+                                <a class="btn-time btn" aria-disabled="false" href="#">21 : 30</a>
+                            </div>
+                            <div class="showtime-item">
+                                <a class="btn-time btn" aria-disabled="false" href="#">23 : 10</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        }
+    </div>
+</section>
+@Html.Action("_footer", "Modules")

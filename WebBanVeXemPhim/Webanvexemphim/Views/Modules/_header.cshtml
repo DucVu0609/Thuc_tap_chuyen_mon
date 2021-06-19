@@ -1,0 +1,25 @@
+﻿<header  class="header header-horizontal header-view-pannel">
+    <div class="container">
+        <nav class="navbar">
+            <a class="navbar-brand" href="~/">
+                <span class="logo-element">
+                    <span class="logo-tape">
+                        <span class="svg-content svg-fill-theme" data-svg="./~/public/images/svg/logo-part.svg"></span>
+                    </span>
+                    <span class="img-logo">                      
+                        <img src="~/Public/images/parts/logo2.png" />
+                    </span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button">
+                <span class="th-dots-active-close th-dots th-bars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  
+                </span>
+            </button>
+            @Html.Action("_mainmenu", "Modules")
+        </nav>
+    </div>
+</header>

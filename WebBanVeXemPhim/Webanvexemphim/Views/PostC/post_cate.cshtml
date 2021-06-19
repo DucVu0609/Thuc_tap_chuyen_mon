@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Webanvexemphim.Models.post>
+@{
+    ViewBag.Title = "Tin tức";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Action("_Header", "Modules")
+<section class="section-long">
+    <div class="container">
+        <div class="section-pannel">
+            <div class="grid row">
+                <div class="col-md-10">
+                    <form autocomplete="off">
+                        <div class="row form-grid">
+                            <div class="col-sm-6 col-lg-3">
+
+                                <p>  Trang Chủ/ <span class="text-danger">@ViewBag.nameCate</span> </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2 my-md-auto d-flex">
+                    <span class="info-title d-md-none mr-3">Select view:</span>
+                    <ul class="ml-md-auto h5 list-inline">
+                        <li class="list-inline-item">
+                            <a class="content-link transparent-link" href="movies-blocks.html"><i class="fas fa-th"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="content-link transparent-link active" href="movies-list.html"><i class="fas fa-th-list"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        @foreach (var item in Model)
+        {
+            <article class="movie-line-entity">
+                <div class="entity-poster" >
+                    <div class="embed-responsive embed-responsive-poster">
+                        <div>  <img width="100" height="100" class="embed-responsive-item" src="~/public/images/post/@item.img" alt="" /></div>
+                      
+                    </div>
+                    <div class="d-over bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show">
+                        <div class="entity-play">
+                            <a class="action-icon-theme action-icon-bordered rounded-circle"  data-magnific-popup="iframe">
+                                <span class="icon-content"><i class="fas fa-play"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="entity-content">
+                    <h4 class="entity-title">
+                        <a class="content-link text-uppercase" href="~/Chi-tiet-vai-viet/@item.slug">@item.title</a>
+                    </h4>
+                    <div class="entity-category">
+                        <a class="content-link" href="movies-blocks.html">@item.created_at.ToString("dd/MM/yyyy")</a>
+                    </div>
+                    <div class="entity-category">
+                        <a class="content-link" href="movies-blocks.html">Tin Tức</a>
+                    </div>
+                    <p class="text-short entity-text">
+                        @Html.Raw(item.descriptionShort)
+                    </p>
+                </div>
+              
+            </article>
+        }
+    </div>
+</section>
+@Html.Action("_footer", "Modules")

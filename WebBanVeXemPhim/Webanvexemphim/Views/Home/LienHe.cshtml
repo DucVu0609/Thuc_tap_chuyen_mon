@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "LienHe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Action("_Header", "Modules")
+<section>
+    <div class="gmap-with-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.569194260589!2d106.7602581147495!3d10.844243492275536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c07e1c02bf%3A0x36e3b562c0d4a5a!2sLotte%20Cinema%20Moonlight!5e0!3m2!1svi!2s!4v1624025454789!5m2!1svi!2s" width="100%" height="700rem" style="border:0; position: absolute; z-index: 0" allowfullscreen="" loading="lazy"></iframe>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 ml-lg-auto">
+                    <div class="gmap-form ">
+
+                        <h4 style="color: white" class="form-title text-uppercase">
+                            Thông tin liên hệ
+                        </h4>
+                        
+                        <form autocomplete="off">
+                            <div class="row form-grid">
+                                <div class="col-sm-6">
+                                    <div class="input-view-flat input-group">
+                                        <input class="form-control" name="name" type="text" placeholder="Tên bạn" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-view-flat input-group">
+                                        <input class="form-control" name="email" type="email" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-view-flat input-group">
+                                        <textarea class="form-control" name="message" placeholder="Lời nhắn"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="px-5 btn btn-theme" type="submit">Gửi liên hệ</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-long">
+    <div class="container">
+        <div class="grid row">
+            <div class="col-md-6">
+                <h4 class="entity-title">Địa chỉ</h4>
+                <p class="entity-text">
+                    102 Đặng Văn Bi, thành phố Thủ Đức, TP.HCM
+                    VIỆT NAM
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="entity-title">Số điện thoại</h4>
+                <p class="entity-text">
+                    (+88) 018 12346251, (+43) 018 4321 6789
+                    <br />(+50) 113 1346 7654, (+08) 555 456 7890
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="entity-title">Email</h4>
+                <p class="entity-text">
+                    a@gmail.com
+                    <br />a@gmail.com
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="entity-title">Fax</h4>
+                <p class="entity-text">
+                    (+88) 018 12346251, (+43) 018 4321 6789
+                    <br />(+50) 113 1346 7654, (+08) 555 456 7890
+                </p>
+            </div>
+        </div>
+     
+    </div>
+  
+</section>

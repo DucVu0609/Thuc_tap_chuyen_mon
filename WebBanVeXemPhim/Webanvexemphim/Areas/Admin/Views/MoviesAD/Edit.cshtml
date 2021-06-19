@@ -1,0 +1,133 @@
+﻿@model Webanvexemphim.Models.movies
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@{
+    List<SelectListItem> listcat = new List<SelectListItem>();
+    List<SelectListItem> listorder = new List<SelectListItem>();
+    List<SelectListItem> status = new List<SelectListItem>();
+
+    SelectListItem statusitem1 = new SelectListItem() { Value = "1", Text = "Xuẩt Bản" };
+    SelectListItem statusitem2 = new SelectListItem() { Value = "2", Text = "Chưa Xuất bản" };
+    status.Add(statusitem1);
+    status.Add(statusitem2);
+
+    SelectListItem listcatitem;
+    foreach (var item in ViewBag.listTopic)
+    {
+        listcatitem = new SelectListItem() { Value = item.ID + "", Text = item.name + "" };
+        listcat.Add(listcatitem);
+    }
+
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="card container card-title bg-white p-1">
+    <div class="row">
+        <div class="col-md-6 "> <h5 class="pl-2 mt-2 text-blues">Chỉnh sửa vé</h5> </div>
+        <div class="col-md-6 m-0">
+            <ol class="breadcrumb bg-white float-sm-right m-0">
+                <li class="breadcrumb-item m-0"><a href="~/Admin">Home</a></li>
+                <li class="breadcrumb-item active m-0">Thêm phim mới</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+<section class="container pt-2 card">
+    @Html.Partial("_MessgeAlert")
+    <div class="container bg-white pt-4 ">
+
+        @using (Html.BeginForm("Edit", "moviesAD", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m=>m.img)
+            <div class=" row ">
+                <div class="col-md-4">  </div>
+                <div class="col-md-4"> <h3 class="text-center font-weight-bold text-success "> SỬA VÉ</h3> </div>
+                <div class="col-md-4 ">
+                    <div class="float-right">
+                        <button class="btn btn-sm bg-success text-white"><i class="far fa-save"></i> Lưu</button>
+                        <a href="~/Admin/post" class="btn btn-sm bg-danger text-white"><i class="far fa-window-close"></i> Hủy</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" row ">
+                <div class="col-md-8">
+                    <div>
+                        <label for="psw"><span class="text-secondary ">Tiêu đề Phim</span></label>
+                        @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                    </div>
+                    <div>
+                        <label for="psw"><span class="text-secondary ">Giá dự kiến</span></label>
+                        @Html.EditorFor(model => model.price, new { htmlAttributes = new { @class = "form-control ", @type = "number" } })
+                        @Html.ValidationMessageFor(model => model.price, "", new { @class = "text-danger" })
+                    </div>
+                    <div>
+                        <label for="psw"><span class="text-secondary ">Đạo diễn</span></label>
+                        @Html.EditorFor(model => model.directors, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.directors, "", new { @class = "text-danger" })
+                    </div>
+                    <div>
+                        <label for="psw"><span class="text-secondary ">Nội dung Phim</span></label>
+                        @Html.TextAreaFor(model => model.detail, new
+                        {
+                            @class = "form-control textarea",
+                       @style = "width: 100%;font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"
+                        })
+                        @Html.ValidationMessageFor(model => model.detail, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <label for="psw"><span class="text-secondary ">Ngày phát hành (ngày chiếu)</span></label>
+                        <input name="DayStart" type="datetime-local" value="@Model.DayStart.ToString("yyyy-MM-ddTHH:mm")" class="form-control">
+                    </div>
+                    <div>
+                        <label for="psw"><span class="text-secondary ">Ngày kết thúc (ngày hết chiếu)</span></label>
+                        <input name="DayEnd" type="datetime-local" value="@Model.DayEnd.ToString("yyyy-MM-ddTHH:mm")" class="form-control">
+                    </div>
+                    <div>
+                        <label for="psw"><span class="text-secondary ">Thời gian chiếu(phút)</span></label>
+                        @Html.EditorFor(model => model.time, new { htmlAttributes = new { @class = "form-control", @type = "number" } })
+                        @Html.ValidationMessageFor(model => model.time, "", new { @class = "text-danger" })
+                    </div>
+                    <div>
+                        <label for="psw"><span class="text-secondary ">Link trailer(youtube)</span></label>
+                        @Html.EditorFor(model => model.LinkTrailer, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.LinkTrailer, "", new { @class = "text-danger" })
+                    </div>
+                    <label for="psw"><span class="text-secondary ">Chọn loại Loại Phim</span></label>
+                    <div>
+                        @Html.DropDownListFor(model => model.catid, listcat, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.catid, "", new { @class = "text-danger" })
+                    </div>
+                    <div>
+                        <label for="psw"><span class="text-secondary ">Hình ảnh Phim</span></label>
+                        <input type="file" class="form-control" name="img" />
+                        @Html.ValidationMessageFor(model => model.img, "", new { @class = "text-danger" })
+
+                    </div>
+                    <div>
+                        <label for="psw"><span class="text-secondary ">Trang Thái</span></label>
+                        @Html.DropDownListFor(model => model.status, status, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
+
+                    </div>
+                </div>
+
+
+            </div>
+        }
+    </div>
+</section>
+<script>
+        $("#post").addClass("active");
+        $(function () {
+            // Summernote
+            $('.textarea').summernote()
+        })
+</script>

@@ -1,0 +1,39 @@
+﻿@model Webanvexemphim.Models.order
+
+
+@{
+    ViewBag.Title = "oderComplete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!-- order complete Page Start -->
+<section class="order-complete inner-page-sec-padding-bottom bg-light">
+    <div class="container bg-white">
+        <div class="row">
+            <div class="col-12">
+                <div class="order-complete-message text-center">
+                    <h1>Cảm ơn !</h1>
+                    <p>Bạn đã đặt vé thành công.</p>
+                </div>
+                <ul class="order-details-list">
+                    <li>Mã đơn hàng: <strong>@Model.ID</strong></li>
+                    <li>Tên khách hàng: <strong>@Model.deliveryname</strong></li>
+                    <li>Số thiện thoại: <strong>@Model.deliveryphone</strong></li>
+                    <li>Email: <strong>@Model.deliveryemail</strong></li>
+                    <li>địa chỉ: <strong>@Model.deliveryaddress</strong></li>
+                    <li>Ngày đặt hàng: <strong>@Model.created_ate</strong></li>
+                   <li>Phương thức thanh toán: <strong> <p>Thanh toán tại quầy.</p></strong></li>                   
+                </ul>
+               
+                <h3 class="order-table-title">Chi tiết đơn hàng</h3>
+                <div class="table-responsive">
+                    @Html.Action("productDetailCheckOut", "Checkout", new { orderId = Model.ID })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

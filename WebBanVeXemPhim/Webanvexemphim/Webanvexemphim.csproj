@@ -1,0 +1,568 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7515F21-D058-4F2D-97B7-A4334DCA14FE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Webanvexemphim</RootNamespace>
+    <AssemblyName>Webanvexemphim</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Public\animate.css\animate.css" />
+    <Content Include="Public\animate.css\animate.min.css" />
+    <Content Include="Public\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Public\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Public\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Public\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Public\bootstrap\css\bootstrap.css" />
+    <Content Include="Public\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Public\bootstrap\css\fStyle.css" />
+    <Content Include="Public\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Public\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Public\bootstrap\js\bootstrap.js" />
+    <Content Include="Public\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Public\css\dot-icons.css" />
+    <Content Include="Public\css\theme.css" />
+    <Content Include="Public\fontawesome\css\fa-brands.css" />
+    <Content Include="Public\fontawesome\css\fa-brands.min.css" />
+    <Content Include="Public\fontawesome\css\fa-regular.css" />
+    <Content Include="Public\fontawesome\css\fa-regular.min.css" />
+    <Content Include="Public\fontawesome\css\fa-solid.css" />
+    <Content Include="Public\fontawesome\css\fa-solid.min.css" />
+    <Content Include="Public\fontawesome\css\fontawesome-all.css" />
+    <Content Include="Public\fontawesome\css\fontawesome-all.min.css" />
+    <Content Include="Public\fontawesome\css\fontawesome.css" />
+    <Content Include="Public\fontawesome\css\fontawesome.min.css" />
+    <Content Include="Public\fontawesome\LICENSE.txt" />
+    <Content Include="Public\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Public\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Public\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Public\images\2150299.jpg" />
+    <Content Include="Public\images\5fbf8c983a882979694300.jpg" />
+    <Content Include="Public\images\5fbfbae7c2b65583172228.jpg" />
+    <Content Include="Public\images\dsmt_kv_vie_1_.jpg" />
+    <Content Include="Public\images\hai-phuong-phim-chieu-rap-viet-nam-hay-nhat-2019.jpg" />
+    <Content Include="Public\images\hqdefault.jpg" />
+    <Content Include="Public\images\parts\bg-ad.jpg" />
+    <Content Include="Public\images\parts\logo2.png" />
+    <Content Include="Public\images\parts\map-marker.png" />
+    <Content Include="Public\images\parts\movie-pattern.png" />
+    <Content Include="Public\images\parts\movie.png" />
+    <Content Include="Public\images\parts\white-square.png" />
+    <Content Include="Public\images\phim-josee-nang-tho-cua-toi-1.jpg" />
+    <Content Include="Public\images\poster.medium.jpg" />
+    <Content Include="Public\images\svg\logo-part.svg" />
+    <Content Include="Public\images\svg\tape-pattern.svg" />
+    <Content Include="Public\js\jquery-3.3.1.js" />
+    <Content Include="Public\js\jquery-3.3.1.min.js" />
+    <Content Include="Public\js\script.js" />
+    <Content Include="Public\magnific-popup\jquery.magnific-popup.js" />
+    <Content Include="Public\magnific-popup\jquery.magnific-popup.min.js" />
+    <Content Include="Public\magnific-popup\magnific-popup.css" />
+    <Content Include="Public\parallax.js\parallax.js" />
+    <Content Include="Public\parallax.js\parallax.min.js" />
+    <Content Include="Public\plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Public\plugins\overlayScrollbars\css\OverlayScrollbars.min.css" />
+    <Content Include="Public\plugins\overlayScrollbars\js\jquery.overlayScrollbars.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ar-AR.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ar-AR.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ar-AR.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-az-AZ.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-az-AZ.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-az-AZ.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-bg-BG.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-bg-BG.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-bg-BG.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ca-ES.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ca-ES.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ca-ES.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-cs-CZ.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-cs-CZ.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-cs-CZ.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-da-DK.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-da-DK.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-da-DK.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-de-DE.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-de-DE.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-de-DE.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-el-GR.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-el-GR.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-el-GR.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-es-ES.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-es-ES.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-es-ES.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-es-EU.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-es-EU.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-es-EU.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-fa-IR.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-fa-IR.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-fa-IR.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-fi-FI.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-fi-FI.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-fi-FI.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-fr-FR.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-fr-FR.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-fr-FR.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-gl-ES.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-gl-ES.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-gl-ES.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-he-IL.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-he-IL.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-he-IL.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-hr-HR.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-hr-HR.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-hr-HR.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-hu-HU.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-hu-HU.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-hu-HU.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-id-ID.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-id-ID.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-id-ID.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-it-IT.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-it-IT.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-it-IT.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ja-JP.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ja-JP.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ja-JP.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ko-KR.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ko-KR.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ko-KR.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-lt-LT.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-lt-LT.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-lt-LT.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-lt-LV.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-lt-LV.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-lt-LV.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-mn-MN.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-mn-MN.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-mn-MN.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-nb-NO.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-nb-NO.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-nb-NO.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-nl-NL.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-nl-NL.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-nl-NL.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-pl-PL.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-pl-PL.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-pl-PL.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-pt-BR.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-pt-BR.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-pt-BR.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-pt-PT.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-pt-PT.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-pt-PT.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ro-RO.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ro-RO.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ro-RO.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ru-RU.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ru-RU.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ru-RU.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sk-SK.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sk-SK.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sk-SK.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sl-SI.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sl-SI.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sl-SI.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sr-RS-Latin.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sr-RS-Latin.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sr-RS-Latin.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sr-RS.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sr-RS.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sr-RS.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sv-SE.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sv-SE.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-sv-SE.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ta-IN.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ta-IN.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-ta-IN.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-th-TH.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-th-TH.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-th-TH.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-tr-TR.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-tr-TR.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-tr-TR.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-uk-UA.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-uk-UA.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-uk-UA.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-uz-UZ.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-uz-UZ.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-uz-UZ.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-vi-VN.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-vi-VN.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-vi-VN.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-zh-CN.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-zh-CN.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-zh-CN.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\lang\summernote-zh-TW.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-zh-TW.min.js" />
+    <Content Include="Public\plugins\summernote\lang\summernote-zh-TW.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\plugin\databasic\summernote-ext-databasic.css" />
+    <Content Include="Public\plugins\summernote\plugin\databasic\summernote-ext-databasic.js" />
+    <Content Include="Public\plugins\summernote\plugin\hello\summernote-ext-hello.js" />
+    <Content Include="Public\plugins\summernote\plugin\specialchars\summernote-ext-specialchars.js" />
+    <Content Include="Public\plugins\summernote\summernote-bs4.css" />
+    <Content Include="Public\plugins\summernote\summernote-bs4.js" />
+    <Content Include="Public\plugins\summernote\summernote-bs4.min.css" />
+    <Content Include="Public\plugins\summernote\summernote-bs4.min.js" />
+    <Content Include="Public\plugins\summernote\summernote-bs4.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\summernote-lite.css" />
+    <Content Include="Public\plugins\summernote\summernote-lite.js" />
+    <Content Include="Public\plugins\summernote\summernote-lite.min.css" />
+    <Content Include="Public\plugins\summernote\summernote-lite.min.js" />
+    <Content Include="Public\plugins\summernote\summernote-lite.min.js.LICENSE.txt" />
+    <Content Include="Public\plugins\summernote\summernote.css" />
+    <Content Include="Public\plugins\summernote\summernote.js" />
+    <Content Include="Public\plugins\summernote\summernote.min.css" />
+    <Content Include="Public\plugins\summernote\summernote.min.js" />
+    <Content Include="Public\plugins\summernote\summernote.min.js.LICENSE.txt" />
+    <Content Include="Public\slick\ajax-loader.gif" />
+    <Content Include="Public\slick\fonts\slick.svg" />
+    <Content Include="Public\slick\slick-theme.css" />
+    <Content Include="Public\slick\slick.css" />
+    <Content Include="Public\slick\slick.js" />
+    <Content Include="Public\slick\slick.min.js" />
+    <Content Include="Public\waypoints\jquery.waypoints.js" />
+    <Content Include="Public\waypoints\jquery.waypoints.min.js" />
+    <Content Include="Public\waypoints\licenses.txt" />
+    <Content Include="Public\waypoints\noframework.waypoints.js" />
+    <Content Include="Public\waypoints\noframework.waypoints.min.js" />
+    <Content Include="Public\waypoints\shortcuts\infinite.js" />
+    <Content Include="Public\waypoints\shortcuts\infinite.min.js" />
+    <Content Include="Public\waypoints\shortcuts\inview.js" />
+    <Content Include="Public\waypoints\shortcuts\inview.min.js" />
+    <Content Include="Public\waypoints\shortcuts\sticky.js" />
+    <Content Include="Public\waypoints\shortcuts\sticky.min.js" />
+    <Content Include="Public\waypoints\waypoints.debug.js" />
+    <Content Include="Public\waypoints\zepto.waypoints.js" />
+    <Content Include="Public\waypoints\zepto.waypoints.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Public\animate.css\LICENSE" />
+    <Content Include="Public\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Public\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Public\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Public\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Public\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Public\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Public\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Public\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Public\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Public\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Public\fontawesome\less\fa-brands.less" />
+    <Content Include="Public\fontawesome\less\fa-regular.less" />
+    <Content Include="Public\fontawesome\less\fa-solid.less" />
+    <Content Include="Public\fontawesome\less\fontawesome.less" />
+    <Content Include="Public\fontawesome\less\_animated.less" />
+    <Content Include="Public\fontawesome\less\_bordered-pulled.less" />
+    <Content Include="Public\fontawesome\less\_core.less" />
+    <Content Include="Public\fontawesome\less\_fixed-width.less" />
+    <Content Include="Public\fontawesome\less\_icons.less" />
+    <Content Include="Public\fontawesome\less\_larger.less" />
+    <Content Include="Public\fontawesome\less\_list.less" />
+    <Content Include="Public\fontawesome\less\_mixins.less" />
+    <Content Include="Public\fontawesome\less\_rotated-flipped.less" />
+    <Content Include="Public\fontawesome\less\_screen-reader.less" />
+    <Content Include="Public\fontawesome\less\_stacked.less" />
+    <Content Include="Public\fontawesome\less\_variables.less" />
+    <Content Include="Public\fontawesome\scss\fa-brands.scss" />
+    <Content Include="Public\fontawesome\scss\fa-regular.scss" />
+    <Content Include="Public\fontawesome\scss\fa-solid.scss" />
+    <Content Include="Public\fontawesome\scss\fontawesome.scss" />
+    <Content Include="Public\fontawesome\scss\_animated.scss" />
+    <Content Include="Public\fontawesome\scss\_bordered-pulled.scss" />
+    <Content Include="Public\fontawesome\scss\_core.scss" />
+    <Content Include="Public\fontawesome\scss\_fixed-width.scss" />
+    <Content Include="Public\fontawesome\scss\_icons.scss" />
+    <Content Include="Public\fontawesome\scss\_larger.scss" />
+    <Content Include="Public\fontawesome\scss\_list.scss" />
+    <Content Include="Public\fontawesome\scss\_mixins.scss" />
+    <Content Include="Public\fontawesome\scss\_rotated-flipped.scss" />
+    <Content Include="Public\fontawesome\scss\_screen-reader.scss" />
+    <Content Include="Public\fontawesome\scss\_stacked.scss" />
+    <Content Include="Public\fontawesome\scss\_variables.scss" />
+    <Content Include="Public\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Public\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Public\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Public\fontawesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="Public\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Public\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Public\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Public\fontawesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="Public\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Public\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Public\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Public\fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="Public\magnific-popup\LICENSE" />
+    <Content Include="Public\parallax.js\LICENSE" />
+    <Content Include="Public\parallax.js\package.json" />
+    <Content Include="Public\slick\config.rb" />
+    <Content Include="Public\slick\fonts\slick.eot" />
+    <Content Include="Public\slick\fonts\slick.ttf" />
+    <Content Include="Public\slick\fonts\slick.woff" />
+    <Content Include="Public\slick\LICENSE" />
+    <Content Include="Public\slick\slick-theme.less" />
+    <Content Include="Public\slick\slick-theme.scss" />
+    <Content Include="Public\slick\slick.less" />
+    <Content Include="Public\slick\slick.scss" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\401.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_leftMenu.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_mainmenu.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_MessgeAlert.cshtml" />
+    <Content Include="Areas\Admin\Views\Dashboard\Index.cshtml" />
+    <Content Include="Public\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Public\plugins\summernote\font\summernote.eot" />
+    <Content Include="Public\plugins\summernote\font\summernote.ttf" />
+    <Content Include="Public\plugins\summernote\font\summernote.woff" />
+    <Content Include="Public\plugins\summernote\font\summernote.woff2" />
+    <Content Include="Public\plugins\summernote\summernote-bs4.js.map" />
+    <Content Include="Public\plugins\summernote\summernote-bs4.min.js.map" />
+    <Content Include="Public\plugins\summernote\summernote-lite.js.map" />
+    <Content Include="Public\plugins\summernote\summernote-lite.min.js.map" />
+    <Content Include="Public\plugins\summernote\summernote.js.map" />
+    <Content Include="Public\plugins\summernote\summernote.min.js.map" />
+    <Content Include="Areas\Admin\Views\Post\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Topic\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Topic\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Topic\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Topic\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Auth\_information.cshtml" />
+    <Content Include="Areas\Admin\Views\Auth\_login.cshtml" />
+    <Content Include="Areas\Admin\Views\MoviesAD\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\MoviesAD\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\MoviesAD\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Orders\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Orders\Orderdetail.cshtml" />
+    <Content Include="Areas\Admin\Views\Orders\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Orders\_productDetailCheckOut.cshtml" />
+    <Content Include="Areas\Admin\Views\Orders\_subproductOrdersuccess.cshtml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Modules\_header.cshtml" />
+    <Content Include="Views\Modules\_mainmenu.cshtml" />
+    <Content Include="Views\Modules\_footer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AuthController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MoviesADController.cs" />
+    <Compile Include="Areas\Admin\Controllers\OrdersController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PostController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TicketController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TopicController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
+    <Compile Include="Common\CommonConstants.cs" />
+    <Compile Include="Common\CustomAuthorizeAttribute.cs" />
+    <Compile Include="Common\Userlogin.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\CheckoutController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ModulesController.cs" />
+    <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\PostCController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="library\Message.cs" />
+    <Compile Include="library\Mystring.cs" />
+    <Compile Include="Models\Cart_item.cs" />
+    <Compile Include="Models\category.cs" />
+    <Compile Include="Models\contact.cs" />
+    <Compile Include="Models\menu.cs" />
+    <Compile Include="Models\DbConnection.cs" />
+    <Compile Include="Models\MessageModel.cs" />
+    <Compile Include="Models\movies.cs" />
+    <Compile Include="Models\order.cs" />
+    <Compile Include="Models\ordersdetail.cs" />
+    <Compile Include="Models\post.cs" />
+    <Compile Include="Models\role.cs" />
+    <Compile Include="Models\topic.cs" />
+    <Compile Include="Models\user.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Movies\_MovieActive.cshtml" />
+    <Content Include="Views\Movies\_MovieOfDay.cshtml" />
+    <Content Include="Views\Movies\MoviesDetail.cshtml" />
+    <Content Include="Views\Home\LienHe.cshtml" />
+    <Content Include="Views\Modules\_submainmenu1.cshtml" />
+    <Content Include="Views\Modules\_submainmenu2.cshtml" />
+    <Content Include="Views\Movies\Movie_Category.cshtml" />
+    <Content Include="Views\PostC\postDetaail.cshtml" />
+    <Content Include="Views\PostC\post_cate.cshtml" />
+    <Content Include="Views\PostC\_postSugger.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Shared\_MessgeAlert.cshtml" />
+    <Content Include="Views\Checkout\oderComplete.cshtml" />
+    <Content Include="Views\Checkout\_productDetailCheckOut.cshtml" />
+    <Content Include="Views\Checkout\_subproductOrdersuccess.cshtml" />
+    <Content Include="Views\Checkout\index.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Ticket\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49452</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49452/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

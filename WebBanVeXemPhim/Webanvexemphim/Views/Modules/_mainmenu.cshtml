@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Webanvexemphim.Models.menu>
+<div class="navbar-collapse">
+    <ul class="navbar-nav">
+        @foreach (var item in Model)
+        {
+            @Html.Action("submainmenu", "Modules", new { id = item.ID })
+           
+        }
+    </ul>
+    <div class="navbar-extra">
+        <a class="btn-theme btn" href="~/gio-hang"><i class="fas fa-ticket-alt"></i>&nbsp;&nbsp;Vé của bạn</a>
+    </div>
+</div>

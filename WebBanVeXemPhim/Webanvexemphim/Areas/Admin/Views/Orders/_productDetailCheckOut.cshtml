@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Webanvexemphim.Models.ordersdetail>
+<table class="table order-details-table">
+    <thead>
+        <tr>
+            <th>Tên vé</th>
+            <th>Tổng tiền</th>
+            <th>Ngày, giờ chiếu phim</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{ int sum = 0;}
+        @foreach (var item in Model)
+        {
+            sum += (int)item.amount;
+        <tr>
+
+            <td>  @Html.Action("subnameProduct", "Orders", new { id = item.productid })       <strong>× @item.quantity</strong></td>
+
+            <td><span>@item.amount.ToString("N0") VND</span></td>
+            <td><span>@item.time Ngày: @item.day</span></td>
+        </tr>
+        }
+
+    </tbody>
+    <tfoot>
+
+        <tr>
+            <th>Tạm tính:</th>
+            <td><span>@sum.ToString("N0") VND</span></td>
+        </tr>
+        <tr>
+            <th>Phương thức thanh toán:</th>
+            <td>Thanh toán tại quầy của rạp</td>
+        </tr>
+        <tr>
+            <th class="font-weight-bold">Tổng:</th>
+            <td><span>@sum.ToString("N0") VND</span></td>
+        </tr>
+    </tfoot>
+</table>
