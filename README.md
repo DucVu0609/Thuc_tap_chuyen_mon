@@ -6,7 +6,9 @@
 - Lớp: Công nghệ thông tin K59
 
 Đề tài: **XÂY DỰNG WEBSITE ĐẶT VÉ XEM PHIM**
+
 Giảng viên: Thầy Nguyễn Lê Minh.
+
 **Phần I: Các công nghệ được sử dụng:**
 - ASP.NET 
 - Microsoft SQL Server
@@ -23,6 +25,7 @@ Giảng viên: Thầy Nguyễn Lê Minh.
 - Quản lý thông tin admin
 - Hiển thị Google Map địa chỉ rạp chiếu phim
 - Chat messenger
+
 **Phần III: Các chức năng chưa hoàn thành**
  
 **Phần IV: Hướng dẫn sử dụng**
