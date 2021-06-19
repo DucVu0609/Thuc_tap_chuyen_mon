@@ -13,6 +13,7 @@ Giảng viên: Thầy Nguyễn Lê Minh.
 - ASP.NET 
 - Microsoft SQL Server
 - HTML, CSS, Jquery, Bootstrap, Javascript
+
 **Phần II: Các chức năng đã hoàn thành**
 - Xây dựng cơ sở dữ liệu
 - Xem thông tin phim đang chiếu và phim sắp chiếu
