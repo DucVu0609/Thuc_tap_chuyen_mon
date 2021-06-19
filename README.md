@@ -6,24 +6,25 @@
 - Lớp: Công nghệ thông tin K59
 
 Đề tài: **XÂY DỰNG WEBSITE ĐẶT VÉ XEM PHIM**
-
+Giảng viên: Thầy Nguyễn Lê Minh.
 **Phần I: Các công nghệ được sử dụng:**
-- Ngôn ngữ lập trình Javascript, PHP
-- HTML, CSS, HTML5, CSS3, Jquery
-- MySQL - kết hợp với PHP để phân quyền trong đăng nhập
-- Công cụ Visual Studio Code, Xampp, ..
-
+- ASP.NET 
+- Microsoft SQL Server
+- HTML, CSS, Jquery, Bootstrap, Javascript
 **Phần II: Các chức năng đã hoàn thành**
-- Đăng ký tài khoản thành viên
-- Đăng nhập
-- Lựa chọn phim
-- Xem trailer
-
+- Xây dựng cơ sở dữ liệu
+- Xem thông tin phim đang chiếu và phim sắp chiếu
+- Chọn thời gian chiếu, xem trailer, điền thông tin đặt vé
+- Xem ưu đãi, gửi liên hệ
+- Đăng nhập trang admin
+- Quản lý phim
+- Quản lý đăng bài viết
+- Quản lý đơn đặt vé
+- Quản lý thông tin admin
+- Hiển thị Google Map địa chỉ rạp chiếu phim
+- Chat messenger
 **Phần III: Các chức năng chưa hoàn thành**
-- Mua vé
-- Chọn phim, ghế ngồi, đặt vé theo ngày giờ 
-- Thanh toán
-- Trang quản lý người dùng của admin
  
 **Phần IV: Hướng dẫn sử dụng**
-- Sử dụng công cụ Visual Studio code để chạy website,..
+- Backup file CSDL
+- Chạy chương trình
