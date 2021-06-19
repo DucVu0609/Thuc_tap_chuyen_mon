@@ -18,6 +18,7 @@ Giảng viên: Thầy Nguyễn Lê Minh.
 - Xây dựng cơ sở dữ liệu
 - Xem thông tin phim đang chiếu và phim sắp chiếu
 - Chọn thời gian chiếu, xem trailer, điền thông tin đặt vé
+- Hiển thị số lượng và tổng tiền
 - Xem ưu đãi, gửi liên hệ
 - Đăng nhập trang admin
 - Quản lý phim
