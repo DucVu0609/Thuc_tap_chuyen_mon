@@ -43,7 +43,7 @@ namespace Webanvexemphim.Areas.Admin.Controllers
         // GET: Admin/User/Create
         public ActionResult Create()
         {
-            //ViewBag.role = db.role.ToList();
+            ViewBag.role = db.Roles.ToList();
             return View();
         }
         [HttpPost]
@@ -74,6 +74,7 @@ namespace Webanvexemphim.Areas.Admin.Controllers
                     return RedirectToAction("Index");
                 }
             }
+            ViewBag.role = db.Roles.ToList();
             return View(user);
         }
 
@@ -89,7 +90,7 @@ namespace Webanvexemphim.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
-            //ViewBag.role = db.Roles.ToList();
+            ViewBag.role = db.Roles.ToList();
             return View(user);
         }
 
@@ -107,6 +108,7 @@ namespace Webanvexemphim.Areas.Admin.Controllers
                 Message.set_flash("Cập nhật thành công", "success");
                 return RedirectToAction("Index");
             }
+            ViewBag.role = db.Roles.ToList();
             return View(user);
         }
 

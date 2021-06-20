@@ -312,7 +312,7 @@ body {
 .col-md-2,
 .col-md-3,
 .col-md-4,
-.col-md-5,
+/*.col-md-5,*/
 .col-md-6,
 .col-md-7,
 .col-md-8,
@@ -856,12 +856,12 @@ a:hover {
   filter: alpha(opacity=80);
 }
 /*------------------------------------------------------------------
-    [5. Section]
+    [5. Section]sss
 */
 
 .section-long {
     padding-top: 2.5em;
-    padding-bottom: -5rem;
+    padding-bottom: 2rem;
     margin-top: 6rem;
     margin-bottom: 6rem;
     background: linear-gradient(to right, #281f64, #ac25b6);

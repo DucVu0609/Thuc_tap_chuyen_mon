@@ -5,34 +5,36 @@
     <link href="~/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body class="bg-login-admin">
+    <div class="bg-lg" style="position: absolute; @*background: repeating-linear-gradient( #5a44e9, #9ecaf3)*@;width: 100%; height: 100%">
+        <img style="position: absolute;width: 100%; height: 100% " src="~/Public/images/parts/backgroundSignInUp.jpeg" />
+        <section class="container pt-5 mt-5" >
+            <div class="row justify-content-center">
+                <div  class="col-md-5">
+                    <div class="card" style="background: repeating-linear-gradient( #5a44e9, #9ecaf3) ">
+                        <div class="card-header " style="padding-bottom: 2rem"><p class="card-title m-0 " style="font-size:17px; color: white ">Đăng nhập</p></div>
+                        <div class="card-body" style="height: 18rem; padding-top: 2.5rem">
+                            <form action="" id="form-login" method="POST">
+                                <div>
+                                    <input type="text" value="" name="username" id="e-mail" class="form-control " placeholder="Tên đăng nhập">
+                                    <span class="text-danger" id="checkuser"></span>
+                                </div>
+                                <div class="pt-3 " id="pass">
+                                    <input type="password" value="" name="password" id="username" class="form-control" placeholder="Mật khẩu">
+                                    <span class="text-danger" id="checkpass"></span>
 
-    <section class="container pt-5 mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-5">
-                <div class="card">
-                    <div class="card-header "><p class="card-title m-0 " style="font-size:17px;">Đăng nhập</p></div>
-                    <div class="card-body">
-                        <form action="" id="form-login" method="POST" >
-                            <div>
-                                <input type="text" value="" name="username" id="e-mail" class="form-control " placeholder="Tên đăng nhập">
-                                <span class="text-danger" id="checkuser"></span>
-                            </div>
-                            <div class="pt-3 " id="pass">
-                                <input type="password" value="" name="password" id="username" class="form-control" placeholder="Mật khẩu">
-                                <span class="text-danger" id="checkpass"></span>
-
-                            </div>
-                            <span class="text-danger"> @ViewBag.error</span>
-                            <div class="pt-3">
-                                <input type="checkbox" name="checkbox" id="checkbox">
-                                <label for="coding" class="card-text text-dark m-0">Lưu thông tin đăng nhập</label>
-                            </div>
-                            <div class="pt-2"><button class="btn bg-secondary text-white w-100" type="submit"> Đăng nhập</button></div>
-                        </form>
+                                </div>
+                                <span class="text-danger"> @ViewBag.error</span>
+                                <div class="pt-3">
+                                    <input type="checkbox" name="checkbox" id="checkbox">
+                                    <label for="coding" class="card-text text-dark m-0" style="color: black !important">Lưu thông tin đăng nhập</label>
+                                </div>
+                                <div class="pt-2" style="margin-top: 2rem"><button class="btn text-white w-100" type="submit" style="background-color: red; height: 3rem"> Đăng nhập</button></div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </body>
 </html> 

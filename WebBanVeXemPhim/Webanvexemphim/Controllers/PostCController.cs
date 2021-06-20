@@ -22,8 +22,8 @@ namespace Webanvexemphim.Controllers
         }
         public ActionResult post_cate(string slug)
         {
-            var singleMovies = db.topics.Where(m => m.status == 1 && m.slug == slug).FirstOrDefault();
-            ViewBag.nameCate = singleMovies.name;
+            var singleMovies = db.topics.Where(m=>m.slug == slug).FirstOrDefault();
+            ViewBag.nameCate = singleMovies.name.ToString();
             var listMovie = db.posts.Where(m => m.status == 1 && m.topid == singleMovies.ID).ToList();
             return View("post_cate", listMovie);
         }
