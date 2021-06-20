@@ -29,6 +29,8 @@ Giảng viên: Thầy Nguyễn Lê Minh.
 - Chat messenger
 
 **Phần III: Các chức năng chưa hoàn thành**
+- Thanh toán online thông qua các ví điện tử
+- Chọn lựa số ghế cụ thể
  
 **Phần IV: Hướng dẫn sử dụng**
 - Backup file CSDL
