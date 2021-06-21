@@ -33,5 +33,6 @@ Giảng viên: Thầy Nguyễn Lê Minh.
 - Chọn lựa số ghế cụ thể
  
 **Phần IV: Hướng dẫn sử dụng**
-- Backup file CSDL
+- Cài đặt csdl : trong muc CSDL
+- Sửa đường dẫn kết nối database trong webconfig
 - Chạy chương trình
